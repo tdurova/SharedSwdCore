@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>155da4a5-4361-4cb2-a3a2-b6bc1df4f390</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedSwdCore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)chromedriver.exe" />
+    <None Include="$(MSBuildThisFileDirectory)geckodriver.exe" />
+    <None Include="$(MSBuildThisFileDirectory)IEDriverServer.exe" />
+    <None Include="$(MSBuildThisFileDirectory)MicrosoftWebDriver.exe" />
+    <None Include="$(MSBuildThisFileDirectory)packages.config" />
+    <None Include="$(MSBuildThisFileDirectory)Properties\Settings.settings" />
+    <None Include="$(MSBuildThisFileDirectory)runNunit3.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Configuration\Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GlobalSuppressions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CorePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ICheckExpectedWebElements.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Invokable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SelfTestingCorePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\Settings.Designer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebDriver\JavaScriptErrorOnThePageException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebDriver\SwdBrowser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebDriver\Wait.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebDriver\WebDriverRunner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebDriver\WebElementExtensions.cs" />
+  </ItemGroup>
+</Project>
